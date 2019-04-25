@@ -57,6 +57,91 @@
 \]
 \end{itemize}
 
+\[
+\begin{tikzpicture}
+    \begin{scope}
+        \draw (-3.5, 3.5) -- (3.5, 3.5);
+        \draw (-3.5, -3.5) -- (3.5, -3.5);
+        \draw (-3.5, -3.5) -- (-3.5, 3.5);
+        \draw (3.5, 3.5) -- (3.5, -3.5);
+        
+        \draw (2.5, 2.5) circle (0.12);
+        \draw (1.35, 2.25) circle (0.12);
+        \draw (1.6, 1.1) circle (0.12);
+        \draw (1.95, 1.9) circle (0.12);
+        \draw (-2.4, -1.9) circle (0.12);
+        \draw (-1.8, -1.3) circle (0.12);
+        \draw (-1.95, 2.11) circle (0.12);
+        \draw (2.6, -2.4) circle (0.12);
+        
+        \draw (-2.6, -2.15) rectangle (-2.15, -1.64);
+        \draw (-2.05, -1.55) rectangle (-1.55, -1.1);
+        \draw[green] (2.2, -2.8) rectangle (3, -2);
+        \draw (2.2, 2.2) rectangle (2.8, 2.8);
+        \draw[red] (1.023, 1.9) rectangle (1.63, 2.57);
+        \draw (1.73, 1.64) rectangle (2.17, 2.13);
+        \draw (1.35, 0.83) rectangle (1.85, 1.38);
+        \draw[green] (-2.4, 1.6) rectangle (-1.5, 2.55);
+    \end{scope}
+    \begin{scope}[xshift=7.5cm]
+        \draw (-3.5, 3.5) -- (3.5, 3.5);
+        \draw (-3.5, -3.5) -- (3.5, -3.5);
+        \draw (-3.5, -3.5) -- (-3.5, 3.5);
+        \draw (3.5, 3.5) -- (3.5, -3.5);
+        
+        \draw (2.5, 2.5) circle (0.12);
+        \draw (1.35, 2.25) circle (0.12);
+        \draw (1.6, 1.1) circle (0.12);
+        \draw (1.95, 1.9) circle (0.12);
+        \draw (-2.4, -1.9) circle (0.12);
+        \draw (-1.8, -1.3) circle (0.12);
+        \draw (-1.95, 2.11) circle (0.12);
+        \draw (2.6, -2.4) circle (0.12);
+        
+        \draw[blue] (-2.7, -2.1) rectangle (-1.5, -1.1);
+        \draw[green] (2.2, -2.8) rectangle (3, -2);
+        \draw[red] (1, 0.83) rectangle (2.8, 2.8);
+        \draw[green] (-2.4, 1.6) rectangle (-1.5, 2.55);
+    \end{scope}
+    \begin{scope}[yshift=-9cm]
+        \draw (-3.5, 3.5) -- (3.5, 3.5);
+        \draw (-3.5, -3.5) -- (3.5, -3.5);
+        \draw (-3.5, -3.5) -- (-3.5, 3.5);
+        \draw (3.5, 3.5) -- (3.5, -3.5);
+        
+        \draw (2.5, 2.5) circle (0.12);
+        \draw (1.35, 2.25) circle (0.12);
+        \draw (1.6, 1.1) circle (0.12);
+        \draw (1.95, 1.9) circle (0.12);
+        \draw (-2.4, -1.9) circle (0.12);
+        \draw (-1.8, -1.3) circle (0.12);
+        \draw (-1.95, 2.11) circle (0.12);
+        \draw (2.6, -2.4) circle (0.12);
+        
+        \draw[red] (-2.3, 0.83) rectangle (2.8, 2.8);
+        \draw[blue] (-2.7, -2.1) rectangle (-1.5, -1.1);
+        \draw[green] (2.2, -2.8) rectangle (3, -2);
+    \end{scope}
+    \begin{scope}[yshift=-9cm, xshift=7.5cm]
+        \draw (-3.5, 3.5) -- (3.5, 3.5);
+        \draw (-3.5, -3.5) -- (3.5, -3.5);
+        \draw (-3.5, -3.5) -- (-3.5, 3.5);
+        \draw (3.5, 3.5) -- (3.5, -3.5);
+        
+        \draw (2.5, 2.5) circle (0.12);
+        \draw (1.35, 2.25) circle (0.12);
+        \draw (1.6, 1.1) circle (0.12);
+        \draw (1.95, 1.9) circle (0.12);
+        \draw (-2.4, -1.9) circle (0.12);
+        \draw (-1.8, -1.3) circle (0.12);
+        \draw (-1.95, 2.11) circle (0.12);
+        \draw (2.6, -2.4) circle (0.12);
+        
+        \draw[red] (-2.7, -2.7) rectangle (2.8, 2.85);
+    \end{scope}
+\end{tikzpicture}
+\]
+
 \section*{Нисходящая кластеризация}
 
 Дивизимные или нисходящие алгоритмы кластеризации разделяют один большой кластер на мелкие, до тех пор, пока в каждом кластере не останется по одному образцу. Для перевода иерархической кластеризации в плоскую, необходимо сделать разрез на каком-то уровне дендрограмы. 
